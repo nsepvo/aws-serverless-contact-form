@@ -10,16 +10,6 @@ https://staging.d2vpf59fscl1pp.amplifyapp.com/
 
 ---
 
-## Key Learnings
-
-- Designing serverless architectures using AWS services
-- API Gateway and Lambda integration patterns
-- Email delivery workflows using Amazon SES
-- Frontend deployment with AWS Amplify
-- Observability using CloudWatch logs and metrics
-
----
-
 ## Overview
 
 This project implements a fully serverless contact form system without requiring any server management.
@@ -51,6 +41,16 @@ When a user submits the form:
 - SES for reliable and low-cost email delivery
 - API Gateway as a secure public-facing endpoint
 - CloudWatch for built-in observability and debugging
+
+---
+
+## Key Learnings
+
+- Designing serverless architectures using AWS services
+- API Gateway and Lambda integration patterns
+- Email delivery workflows using Amazon SES
+- Frontend deployment with AWS Amplify
+- Observability using CloudWatch logs and metrics
 
 ---
 
