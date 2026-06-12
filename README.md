@@ -10,35 +10,19 @@ https://staging.d2vpf59fscl1pp.amplifyapp.com/
 
 ---
 
-## Architecture
+## Key Learnings
 
-User submissions flow through a serverless AWS pipeline:
-
-Frontend (AWS Amplify) > API Gateway (REST API) > AWS Lambda (request handler + validation) > Amazon SES (email delivery) > Recipient Email Inbox
-
----
-
-## Monitoring Flow
-
-AWS Lambda + API Gateway
-        ↓
-CloudWatch Logs & Metrics
+- Designing serverless architectures using AWS services
+- API Gateway and Lambda integration patterns
+- Email delivery workflows using Amazon SES
+- Frontend deployment with AWS Amplify
+- Observability using CloudWatch logs and metrics
 
 ---
 
 ## Overview
 
 This project implements a fully serverless contact form system without requiring any server management.
-
-When a user submits the form:
-
-- The frontend sends a POST request to API Gateway
-- API Gateway triggers a Lambda function
-- Lambda validates and processes the request data
-- AWS SES sends the email to a verified recipient
-- CloudWatch logs execution, errors, and performance metrics
-
----
 
 ## AWS Services Used
 
@@ -50,38 +34,13 @@ When a user submits the form:
 
 ---
 
-## Key Features
+When a user submits the form:
 
-- Fully serverless architecture (no infrastructure management)
-- Event-driven backend processing
-- Secure email delivery via AWS SES
-- Input validation at the Lambda layer
-- Scalable and cost-efficient design
-- Centralised logging and monitoring
-
----
-
-## Project Structure
-
-/frontend
-  - index.html
-
-/lambda
-  - lambda_function.py
-
-README.md
-architecture.png 
-
----
-
-## How It Works
-
-1. User fills out the contact form on the frontend
-2. Form sends a POST request to API Gateway
-3. API Gateway triggers AWS Lambda
-4. Lambda extracts and validates the request payload
-5. SES sends an email containing the message content
-6. CloudWatch records logs for debugging and monitoring
+- The frontend sends a POST request to API Gateway
+- API Gateway triggers a Lambda function
+- Lambda validates and processes the request data
+- AWS SES sends the email to a verified recipient
+- CloudWatch logs execution, errors, and performance metrics
 
 ---
 
@@ -95,15 +54,13 @@ architecture.png
 
 ---
 
-## Security Considerations
-
-- IAM roles restrict Lambda permissions to only required AWS services
-- SES uses verified sender identities
-- API Gateway acts as a controlled public interface
-- No exposed backend servers or persistent instances
-
----
-
 ## Summary
 
 This project demonstrates a production-style serverless contact system using AWS managed services. It focuses on scalability, simplicity, and minimal operational overhead while providing a fully functional email submission pipeline.
+
+## Contact
+
+Open to internship and graduate opportunities in software engineering and cloud computing.
+
+- Email: nevenspooner03@gmail.com
+- LinkedIn: https://www.linkedin.com/in/neven-spooner/
