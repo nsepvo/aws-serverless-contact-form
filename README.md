@@ -56,7 +56,7 @@ When a user submits the form:
 
 ## Summary
 
-This project demonstrates a production-style serverless contact system using AWS managed services. It focuses on scalability, simplicity, and minimal operational overhead while providing a fully functional email submission pipeline.
+This project demonstrates a serverless contact form built using AWS managed services. It focuses on simplicity and helping me gain hands-on experience with serverless architecture, deployment, monitoring, and email workflows.
 
 ## Contact
 
