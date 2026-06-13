@@ -8,6 +8,10 @@ A fully serverless contact form built on AWS that processes user messages and se
 
 https://staging.d2vpf59fscl1pp.amplifyapp.com/
 
+## Architecture
+
+![Architecture Diagram](architecture.png)
+
 ---
 
 ## Overview
